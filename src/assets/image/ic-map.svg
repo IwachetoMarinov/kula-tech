@@ -1,0 +1,9 @@
+<svg width="20px" height="24px" viewBox="0 0 20 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>ic-map</title>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g id="ic-map" transform="translate(1.000000, 0.000000)" stroke="#2C354D" stroke-width="1.17683">
+            <path d="M18.1037,9.98261 C18.1037,16.8475 9.2774,23.222 9.2774,23.222 C9.2774,23.222 0.45117,16.8475 0.45117,9.98261 C0.45117,4.83789 4.13172,0.666016 9.2774,0.666016 C14.4221,0.666016 18.1037,4.83789 18.1037,9.98261 Z" id="Path"></path>
+            <path d="M9.2785,14.3948 C11.9866,14.3948 14.1819,12.1995 14.1819,9.49136 C14.1819,6.78325 11.9866,4.58789 9.2785,4.58789 C6.57036,4.58789 4.375,6.78325 4.375,9.49136 C4.375,12.1995 6.57036,14.3948 9.2785,14.3948 Z" id="Path"></path>
+        </g>
+    </g>
+</svg>

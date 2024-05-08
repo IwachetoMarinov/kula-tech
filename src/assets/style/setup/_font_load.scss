@@ -1,0 +1,50 @@
+/* ------------------------------------------------------------ *\
+	fonts
+\* ------------------------------------------------------------ */
+
+@font-face {font-display:swap;
+    font-family: 'Recoleta';
+    src: url('../../assets/fonts/recoleta/Recoleta-Regular.otf') format('opentype');
+    font-weight: 400;
+    font-style: normal;
+  }
+  @font-face {font-display:swap;
+    font-family: 'Recoleta';
+    src: url('../../assets/fonts/recoleta/Recoleta-Medium.otf') format('opentype');
+    font-weight: 500;
+    font-style: normal;
+  }
+  @font-face {font-display:swap;
+    font-family: 'Recoleta';
+    src: url('../../assets/fonts/recoleta/Recoleta-SemiBold.otf') format('opentype');
+    font-weight: bold;
+    font-style: normal;
+  }
+  
+  @font-face {font-display:swap;
+    font-family: 'Avenir';
+    src: url('../../assets/fonts/Avenir/AvenirLTW05-45Book.otf') format('opentype');
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+  @font-face {font-display:swap;
+    font-family: 'Avenir';
+    src: url('../../assets/fonts/Avenir/Avenir-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  @font-face {font-display:swap;
+    font-family: 'Avenir';
+    src: url('../../assets/fonts/Avenir/AvenirLTW05-65Medium.otf') format('opentype');
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+  @font-face {font-display:swap;
+    font-family: 'Avenir';
+    src: url('../../assets/fonts/Avenir/AvenirLTW05-85Heavy.otf') format('opentype');
+    font-weight: bold;
+    font-style: normal;
+  }

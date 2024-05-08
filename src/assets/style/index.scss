@@ -1,0 +1,20 @@
+// SETUP
+@import 'setup/variables';
+@import 'setup/mixins';
+@import 'setup/fonts';
+@import 'setup/helpers';
+@import "setup/base";
+@import "setup/popups";
+
+// COMPONENTS
+@import "setup/_header";
+@import "setup/_footer";
+
+// PAGES
+@import "setup/_home";
+@import "setup/_city";
+@import "setup/_building";
+@import "setup/_pages";
+
+@import "setup/_font_load";
+

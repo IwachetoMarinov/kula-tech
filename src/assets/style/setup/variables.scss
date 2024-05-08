@@ -1,0 +1,40 @@
+/*---colors---*/
+:root {
+  --primary: #83AB80;
+  --primary-light: #A7D5B0;
+  --secondary: #e0ccce;
+  --secondary-light: #ead2d4;
+  --basic: #292929;
+  --font: #141414;
+  --font-light: #5b5958;
+  --bege: #F2E9E7;
+  --light: #FFFBF7;
+  --blue: #B0C2CC;
+  --border:rgb(20 20 20 / 17%);
+}
+$color-primary: #83AB80;
+$color-primary-light: #A7D5B0;
+$color-primary-dark: darken($color-primary, 09%);
+$color-basic:#292929;
+$color-basic-light: lighten($color-basic, 09%);
+$color-font:#141414;
+$color-font-light:#434241;
+$color-secondary:#e0ccce;
+$color-secondary-dark: darken($color-secondary, 06%);
+$color-secondary-light:#ead2d4;
+$color-bege:#F2E9E7;
+$color-light:#FFFBF7;
+$color-blue: #B0C2CC;
+$color-border:rgb(20 20 20 / 17%);
+//$color-light:#e8ebe7;
+
+
+
+/*---breakpoints---*/
+$mobile-small: 420px;
+$mobile-medium: 650px;
+$mobile: 800px;
+$tablet: 1100px;
+$laptop-small: 1300px;
+$laptop: 1580px;
+$screen-big: 1920px;

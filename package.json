@@ -1,0 +1,40 @@
+{
+  "name": "kula",
+  "private": true,
+  "scripts": {
+    "build": "gridsome build",
+    "dev": "netlify dev",
+    "explore": "gridsome explore"
+  },
+  "dependencies": {
+    "@contentful/rich-text-html-renderer": "^15.11.0",
+    "@gridsome/plugin-sitemap": "^0.4.0",
+    "@gridsome/source-contentful": "^0.6.0",
+    "@mdi/font": "^7.0.96",
+    "axios": "^0.21.4",
+    "body-parser": "^1.19.1",
+    "compression": "^1.7.4",
+    "contentful-management": "^7.51.1",
+    "contentful-resolve-response": "^1.3.0",
+    "dayjs": "^1.11.3",
+    "dotenv-webpack": "^7.0.3",
+    "express": "^4.17.2",
+    "gridsome": "^0.7.0",
+    "gridsome-plugin-gtm": "^0.1.1",
+    "gsap": "^3.10.3",
+    "js-cookie": "^3.0.1",
+    "memory-cache": "^0.2.0",
+    "serverless-http": "^2.7.0",
+    "swiper": "^5.4.5",
+    "vue-awesome-swiper": "^4.1.1",
+    "vue2-daterange-picker": "0.6.5",
+    "vue2-google-maps": "^0.10.7",
+    "vuelidate": "^0.7.7",
+    "vuetify": "^2.6.3",
+    "vuex": "^3.6.2"
+  },
+  "devDependencies": {
+    "sass": "^1.49.4",
+    "sass-loader": "^10.2.1"
+  }
+}
