@@ -11,7 +11,10 @@ import BuildingLayout from "../layouts/BuildingLayout.vue";
 import BuildingPage from "../components/building/BuildingPage.vue";
 
 export default {
-  components: { BuildingPage, BuildingLayout },
+  components: {
+    BuildingPage,
+    BuildingLayout,
+  },
   data() {
     return {
       breadcrumb: null,
@@ -31,6 +34,7 @@ export default {
     },
   },
   async mounted() {
+    console.log("building", this.$page.building);
     const city = this.cities.find(
       (city) => city.name === this.$page.building.address.city
     );

@@ -110,7 +110,6 @@
     </section>
     <!--end building-hero -->
 
-    <!-- Here I must this section -->
     <section class="building-main relative sec--pad--btm">
       <div class="layout q_flex flex--top flex--reverse">
         <div class="building-main-right">
@@ -124,6 +123,7 @@
             :isAllFully="isAllFully"
             ref="checkout"
             @onTogglePicker="onTogglePicker"
+
             :apartments="filteredBuilding.apartments"
             @onCheckAvailability="onCheckAvailability"
           />
@@ -156,17 +156,8 @@
           </div>
           <!--end section -->
           <div ref="buildingFilterHeader"></div>
-
           <div v-show="!isCheckout" class="hold-building-tabs relative">
-            <div
-              class="building-tabs"
-              ref="tabs"
-              :style="
-                isOnTab
-                  ? { 'pointer-events': 'none' }
-                  : { 'pointer-events': 'initial' }
-              "
-            >
+            <div class="building-tabs" ref="tabs" :style="isOnTab ? {'pointer-events': 'none'} : {'pointer-events': 'initial'}">
               <v-tabs v-model="selectedTab">
                 <v-tab @click="onTab('apartments')"
                   >Choose your apartment</v-tab
@@ -196,8 +187,8 @@
             <template
               v-else-if="
                 !isLoading &&
-                filteredBuilding.apartments &&
-                filteredBuilding.apartments.length
+                  filteredBuilding.apartments &&
+                  filteredBuilding.apartments.length
               "
               v-for="apartment in filteredBuilding.apartments"
             >
@@ -222,9 +213,7 @@
             </template>
             <div
               class="no-results-wrap q_flex flex--column flex--base"
-              v-show="
-                !isLoading && !isApartmentExist && !filteredBuilding.available
-              "
+              v-show="!isLoading && !isApartmentExist && !filteredBuilding.available"
             >
               <div class="ohh-title q_flex">
                 <g-image src="~/assets/image/ohh.png" alt=""></g-image>
@@ -256,8 +245,8 @@
                 <template
                   v-if="
                     page.disableAmenitiesCount &&
-                    amenitiesDisabled &&
-                    amenitiesDisabled.length
+                      amenitiesDisabled &&
+                      amenitiesDisabled.length
                   "
                 >
                   <div
@@ -327,7 +316,6 @@
         </div>
       </div>
     </section>
-
     <div>
       <v-dialog v-model="isCheckoutModal" width="1200">
         <div class="ps-dialog">

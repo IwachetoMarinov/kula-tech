@@ -3,7 +3,7 @@
 
 module.exports = {
   siteName: "Kula",
-  titleTemplate: (title) => '',
+  titleTemplate: (title) => "",
   siteUrl: "https://staykula.com",
   chainWebpack: async (config, { isProd, isClient }) => {
     if (isProd && isClient) {

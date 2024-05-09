@@ -1,14 +1,21 @@
 <template>
   <section>
+    <h2>Building Page</h2>
     <div class="neighborhood-section-img relative over--hide no_mobile">
-      <div class="img-cover c-pointer" @click.stop="isGallery = true">
+      <div
+        class="img-cover c-pointer"
+        @click.stop="isGallery = true"
+        v-if="neighborhood?.gallery?.[0]?.file?.url"
+      >
         <g-image
-          :src="neighborhood.gallery[0].file.url + '?fm=webp&w=1200'"
-          :alt="neighborhood.gallery[0].title" class="no_mobile"
+          :src="neighborhood?.gallery?.[0]?.file?.url + '?fm=webp&w=1200'"
+          :alt="neighborhood?.gallery?.[0]?.title"
+          class="no_mobile"
         />
-         <g-image
-          :src="neighborhood.gallery[0].file.url + '?fm=webp&w=768'"
-          :alt="neighborhood.gallery[0].title" class="mobile_only"
+        <g-image
+          :src="neighborhood?.gallery?.[0]?.file?.url + '?fm=webp&w=768'"
+          :alt="neighborhood?.gallery?.[0]?.title"
+          class="mobile_only"
         />
       </div>
       <button
@@ -20,28 +27,36 @@
       </button>
     </div>
     <div class="mobile_only neighborhood-section-slide over--hide">
-      <image-swiper class="" :images="neighborhood.gallery" />
+      <image-swiper class="" :images="neighborhood?.gallery" />
     </div>
 
     <div v-if="isGallery">
       <gallery
-        :images="neighborhood.gallery"
+        :images="neighborhood?.gallery"
         @onCloseGallery="isGallery = false"
       />
     </div>
     <div
+      v-if="neighborhood?.fullDescription"
       class="text mb--42 max--850"
-      v-html="toHtml(neighborhood.fullDescription)"
+      v-html="toHtml(neighborhood?.fullDescription)"
     ></div>
 
     <h3 class="title--16">The neighborhood vibe</h3>
-    <div class="build-map-address neighbor-f q_flex flex--top m-block">
+    <div
+      class="build-map-address neighbor-f q_flex flex--top m-block"
+      v-if="neighborhood?.features?.length"
+    >
       <div
         class="item_city_option q_flex flex--start--top is--fit"
         v-for="(feature, index) in neighborhood.features"
         :key="index"
       >
-        <g-image :src="feature.image.file.url" :alt="feature.image.title" />
+        <g-image
+          :src="feature?.image?.file?.url"
+          :alt="feature.image.title"
+          v-if="feature?.image?.file?.url"
+        />
         <div class="is--fit">
           <div class="tx--16">{{ feature.title }}</div>
           <div class="tx--16" v-html="toHtml(feature.content)"></div>
@@ -53,7 +68,7 @@
 
 <script>
 import Gallery from "../../commons/Gallery.vue";
-import ImageSwiper from '../../swiper/ImageSwiper.vue';
+import ImageSwiper from "../../swiper/ImageSwiper.vue";
 
 export default {
   name: "NeighborhoodSection",
